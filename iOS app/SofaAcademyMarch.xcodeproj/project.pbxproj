@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9101BB654D54FCA85669AB0D /* Pods_SofaAcademyMarch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85C25AFFE5C39CE8FA7FC48E /* Pods_SofaAcademyMarch.framework */; };
 		93988D6D27DA473400DF6BF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93988D6C27DA473400DF6BF8 /* AppDelegate.swift */; };
 		93988D6F27DA473400DF6BF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93988D6E27DA473400DF6BF8 /* SceneDelegate.swift */; };
 		93988D7127DA473400DF6BF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93988D7027DA473400DF6BF8 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		85C25AFFE5C39CE8FA7FC48E /* Pods_SofaAcademyMarch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SofaAcademyMarch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93988D6927DA473400DF6BF8 /* SofaAcademyMarch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SofaAcademyMarch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93988D6C27DA473400DF6BF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93988D6E27DA473400DF6BF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +38,8 @@
 		93DEBC8A27F3B7F700E24D89 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		93DEBC8C27F3B80100E24D89 /* PopUpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpManager.swift; sourceTree = "<group>"; };
 		93DEBC8E27F3B8C200E24D89 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		BFDF9EB4B83C75F296CDE815 /* Pods-SofaAcademyMarch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofaAcademyMarch.debug.xcconfig"; path = "Target Support Files/Pods-SofaAcademyMarch/Pods-SofaAcademyMarch.debug.xcconfig"; sourceTree = "<group>"; };
+		CBDF34C3E71CF336CAD10426 /* Pods-SofaAcademyMarch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofaAcademyMarch.release.xcconfig"; path = "Target Support Files/Pods-SofaAcademyMarch/Pods-SofaAcademyMarch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +47,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9101BB654D54FCA85669AB0D /* Pods_SofaAcademyMarch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C74AA67213984B7543917F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85C25AFFE5C39CE8FA7FC48E /* Pods_SofaAcademyMarch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C121E6D5C38B15ED3BD6F6A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFDF9EB4B83C75F296CDE815 /* Pods-SofaAcademyMarch.debug.xcconfig */,
+				CBDF34C3E71CF336CAD10426 /* Pods-SofaAcademyMarch.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		93988D6027DA473400DF6BF8 = {
 			isa = PBXGroup;
 			children = (
 				93988D6B27DA473400DF6BF8 /* SofaAcademyMarch */,
 				93988D6A27DA473400DF6BF8 /* Products */,
+				8C121E6D5C38B15ED3BD6F6A /* Pods */,
+				4C74AA67213984B7543917F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -164,9 +189,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93988D7D27DA473500DF6BF8 /* Build configuration list for PBXNativeTarget "SofaAcademyMarch" */;
 			buildPhases = (
+				25774DE9213A5B65B16D1161 /* [CP] Check Pods Manifest.lock */,
 				93988D6527DA473400DF6BF8 /* Sources */,
 				93988D6627DA473400DF6BF8 /* Frameworks */,
 				93988D6727DA473400DF6BF8 /* Resources */,
+				E96FFA546F0C07A4EEF355EA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -221,6 +248,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25774DE9213A5B65B16D1161 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SofaAcademyMarch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E96FFA546F0C07A4EEF355EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SofaAcademyMarch/Pods-SofaAcademyMarch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SofaAcademyMarch/Pods-SofaAcademyMarch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SofaAcademyMarch/Pods-SofaAcademyMarch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		93988D6527DA473400DF6BF8 /* Sources */ = {
@@ -372,6 +441,7 @@
 		};
 		93988D7E27DA473500DF6BF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFDF9EB4B83C75F296CDE815 /* Pods-SofaAcademyMarch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -400,6 +470,7 @@
 		};
 		93988D7F27DA473500DF6BF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBDF34C3E71CF336CAD10426 /* Pods-SofaAcademyMarch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

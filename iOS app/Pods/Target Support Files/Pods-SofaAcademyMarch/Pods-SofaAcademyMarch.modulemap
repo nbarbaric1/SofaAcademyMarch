@@ -1,0 +1,6 @@
+framework module Pods_SofaAcademyMarch {
+  umbrella header "Pods-SofaAcademyMarch-umbrella.h"
+
+  export *
+  module * { export * }
+}
