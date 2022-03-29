@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class BaseViewController: UIViewController {
     
@@ -40,7 +41,7 @@ extension BaseViewController {
     func setupView(_ view: UIView) {
         self.view.backgroundColor = .red
         self.view.addSubview(view)
-        //        view.fillSuperviewSafeAreaLayoutGuide()
+        view.snp.makeConstraints { $0.edges.equalToSuperview() }
         hideKeyboardWhenTappedAround()
     }
 }

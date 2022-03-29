@@ -20,6 +20,7 @@
 		93DEBC8B27F3B7F700E24D89 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DEBC8A27F3B7F700E24D89 /* AlertViewController.swift */; };
 		93DEBC8D27F3B80100E24D89 /* PopUpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DEBC8C27F3B80100E24D89 /* PopUpManager.swift */; };
 		93DEBC8F27F3B8C200E24D89 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DEBC8E27F3B8C200E24D89 /* BaseViewController.swift */; };
+		93DEBC9127F3BD5600E24D89 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DEBC9027F3BD5600E24D89 /* BaseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		93DEBC8A27F3B7F700E24D89 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		93DEBC8C27F3B80100E24D89 /* PopUpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpManager.swift; sourceTree = "<group>"; };
 		93DEBC8E27F3B8C200E24D89 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		93DEBC9027F3BD5600E24D89 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		BFDF9EB4B83C75F296CDE815 /* Pods-SofaAcademyMarch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofaAcademyMarch.debug.xcconfig"; path = "Target Support Files/Pods-SofaAcademyMarch/Pods-SofaAcademyMarch.debug.xcconfig"; sourceTree = "<group>"; };
 		CBDF34C3E71CF336CAD10426 /* Pods-SofaAcademyMarch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofaAcademyMarch.release.xcconfig"; path = "Target Support Files/Pods-SofaAcademyMarch/Pods-SofaAcademyMarch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,7 +70,6 @@
 				BFDF9EB4B83C75F296CDE815 /* Pods-SofaAcademyMarch.debug.xcconfig */,
 				CBDF34C3E71CF336CAD10426 /* Pods-SofaAcademyMarch.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -145,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				93DEBC8E27F3B8C200E24D89 /* BaseViewController.swift */,
+				93DEBC9027F3BD5600E24D89 /* BaseView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -305,6 +307,7 @@
 				93988D6D27DA473400DF6BF8 /* AppDelegate.swift in Sources */,
 				93988D6F27DA473400DF6BF8 /* SceneDelegate.swift in Sources */,
 				93988D8327DA4AB200DF6BF8 /* ProfileVC.swift in Sources */,
+				93DEBC9127F3BD5600E24D89 /* BaseView.swift in Sources */,
 				93DEBC8627F3B59E00E24D89 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
