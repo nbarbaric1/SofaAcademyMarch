@@ -10,7 +10,6 @@
 		9101BB654D54FCA85669AB0D /* Pods_SofaAcademyMarch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85C25AFFE5C39CE8FA7FC48E /* Pods_SofaAcademyMarch.framework */; };
 		93988D6D27DA473400DF6BF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93988D6C27DA473400DF6BF8 /* AppDelegate.swift */; };
 		93988D6F27DA473400DF6BF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93988D6E27DA473400DF6BF8 /* SceneDelegate.swift */; };
-		93988D7127DA473400DF6BF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93988D7027DA473400DF6BF8 /* ViewController.swift */; };
 		93988D7627DA473500DF6BF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93988D7527DA473500DF6BF8 /* Assets.xcassets */; };
 		93988D7927DA473500DF6BF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93988D7727DA473500DF6BF8 /* LaunchScreen.storyboard */; };
 		93988D8127DA4AA800DF6BF8 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93988D8027DA4AA800DF6BF8 /* SearchVC.swift */; };
@@ -25,6 +24,8 @@
 		93DEBC9627F3BF8500E24D89 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DEBC9527F3BF8500E24D89 /* UILabel+Extensions.swift */; };
 		93DEBC9827F3C01A00E24D89 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DEBC9727F3C01A00E24D89 /* UITextField+Extensions.swift */; };
 		93DEBC9A27F3C0CD00E24D89 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DEBC9927F3C0CD00E24D89 /* UIColor+Extensions.swift */; };
+		93DEBC9E27F3C54C00E24D89 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DEBC9D27F3C54C00E24D89 /* SearchView.swift */; };
+		93DEBCA027F3C55800E24D89 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DEBC9F27F3C55800E24D89 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +33,6 @@
 		93988D6927DA473400DF6BF8 /* SofaAcademyMarch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SofaAcademyMarch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93988D6C27DA473400DF6BF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93988D6E27DA473400DF6BF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		93988D7027DA473400DF6BF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		93988D7527DA473500DF6BF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93988D7827DA473500DF6BF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93988D7A27DA473500DF6BF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +48,8 @@
 		93DEBC9527F3BF8500E24D89 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
 		93DEBC9727F3C01A00E24D89 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
 		93DEBC9927F3C0CD00E24D89 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		93DEBC9D27F3C54C00E24D89 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		93DEBC9F27F3C55800E24D89 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		BFDF9EB4B83C75F296CDE815 /* Pods-SofaAcademyMarch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofaAcademyMarch.debug.xcconfig"; path = "Target Support Files/Pods-SofaAcademyMarch/Pods-SofaAcademyMarch.debug.xcconfig"; sourceTree = "<group>"; };
 		CBDF34C3E71CF336CAD10426 /* Pods-SofaAcademyMarch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofaAcademyMarch.release.xcconfig"; path = "Target Support Files/Pods-SofaAcademyMarch/Pods-SofaAcademyMarch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,9 +115,8 @@
 		93DEBC7D27F3B4BD00E24D89 /* UIFlow */ = {
 			isa = PBXGroup;
 			children = (
-				93988D8227DA4AB200DF6BF8 /* ProfileVC.swift */,
-				93988D8027DA4AA800DF6BF8 /* SearchVC.swift */,
-				93988D7027DA473400DF6BF8 /* ViewController.swift */,
+				93DEBC9C27F3C4F400E24D89 /* SearchScreen */,
+				93DEBC9B27F3C4EC00E24D89 /* ProfileScreen */,
 			);
 			path = UIFlow;
 			sourceTree = "<group>";
@@ -194,6 +195,32 @@
 				93988D7A27DA473500DF6BF8 /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		93DEBC9B27F3C4EC00E24D89 /* ProfileScreen */ = {
+			isa = PBXGroup;
+			children = (
+				93DEBCA127F3CC8300E24D89 /* Views */,
+				93988D8227DA4AB200DF6BF8 /* ProfileVC.swift */,
+				93DEBC9F27F3C55800E24D89 /* ProfileView.swift */,
+			);
+			path = ProfileScreen;
+			sourceTree = "<group>";
+		};
+		93DEBC9C27F3C4F400E24D89 /* SearchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				93988D8027DA4AA800DF6BF8 /* SearchVC.swift */,
+				93DEBC9D27F3C54C00E24D89 /* SearchView.swift */,
+			);
+			path = SearchScreen;
+			sourceTree = "<group>";
+		};
+		93DEBCA127F3CC8300E24D89 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,14 +340,15 @@
 				93DEBC8D27F3B80100E24D89 /* PopUpManager.swift in Sources */,
 				93DEBC9A27F3C0CD00E24D89 /* UIColor+Extensions.swift in Sources */,
 				93988D8127DA4AA800DF6BF8 /* SearchVC.swift in Sources */,
-				93988D7127DA473400DF6BF8 /* ViewController.swift in Sources */,
 				93DEBC9627F3BF8500E24D89 /* UILabel+Extensions.swift in Sources */,
 				93DEBC8927F3B7EC00E24D89 /* AlertView.swift in Sources */,
 				93DEBC8B27F3B7F700E24D89 /* AlertViewController.swift in Sources */,
 				93DEBC8F27F3B8C200E24D89 /* BaseViewController.swift in Sources */,
 				93DEBC9827F3C01A00E24D89 /* UITextField+Extensions.swift in Sources */,
+				93DEBCA027F3C55800E24D89 /* ProfileView.swift in Sources */,
 				93988D6D27DA473400DF6BF8 /* AppDelegate.swift in Sources */,
 				93DEBC9327F3BDD200E24D89 /* CustomLabel.swift in Sources */,
+				93DEBC9E27F3C54C00E24D89 /* SearchView.swift in Sources */,
 				93988D6F27DA473400DF6BF8 /* SceneDelegate.swift in Sources */,
 				93988D8327DA4AB200DF6BF8 /* ProfileVC.swift in Sources */,
 				93DEBC9127F3BD5600E24D89 /* BaseView.swift in Sources */,

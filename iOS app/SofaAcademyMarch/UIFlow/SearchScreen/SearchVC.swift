@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SearchVC: UIViewController {
+class SearchVC: BaseViewController {
     
     let imageView1 = UIImageView()
     let imageView2 = UIImageView()
