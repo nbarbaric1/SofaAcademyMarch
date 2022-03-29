@@ -39,7 +39,7 @@ extension BaseViewController {
 
 extension BaseViewController {
     func setupView(_ view: UIView) {
-        self.view.backgroundColor = .red
+        self.view.backgroundColor = .white
         self.view.addSubview(view)
         view.snp.makeConstraints { $0.edges.equalToSuperview() }
         hideKeyboardWhenTappedAround()

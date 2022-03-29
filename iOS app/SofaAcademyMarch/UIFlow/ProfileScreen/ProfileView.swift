@@ -12,7 +12,7 @@ class ProfileView: UIView {
     private let aboutLabel = CustomLabel(text: "About", textSize: 20, textColor: .black)
     private let titleLabel = CustomLabel(text: "SofaScore Academy", textSize: 18, textColor: .black)
     private let subtitleLabel = CustomLabel(text: "Class 2022", textSize: 16, textColor: .black)
-    
+    private let infoStackView = InfoStackView()
     init() {
         super.init(frame: .zero)
         setupView()
@@ -31,6 +31,7 @@ extension ProfileView: BaseView {
         addSubview(aboutLabel)
         addSubview(titleLabel)
         addSubview(subtitleLabel)
+        addSubview(infoStackView)
     }
     
     func styleSubviews() {
@@ -51,6 +52,13 @@ extension ProfileView: BaseView {
         subtitleLabel.snp.makeConstraints {
             $0.leading.equalToSuperview().offset(30)
             $0.top.equalTo(titleLabel.snp.bottom).offset(4)
+        }
+        
+        infoStackView.snp.makeConstraints {
+            $0.top.equalTo(subtitleLabel.snp.bottom).offset(120)
+            $0.leading.equalToSuperview().offset(30)
+            $0.trailing.equalToSuperview().offset(-30)
+            $0.height.equalTo(200)
         }
     }
 }
