@@ -14,6 +14,7 @@
 		93988D7927DA473500DF6BF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93988D7727DA473500DF6BF8 /* LaunchScreen.storyboard */; };
 		93988D8127DA4AA800DF6BF8 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93988D8027DA4AA800DF6BF8 /* SearchVC.swift */; };
 		93988D8327DA4AB200DF6BF8 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93988D8227DA4AB200DF6BF8 /* ProfileVC.swift */; };
+		93DEBC8627F3B59E00E24D89 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DEBC8527F3B59E00E24D89 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		93988D7A27DA473500DF6BF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93988D8027DA4AA800DF6BF8 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		93988D8227DA4AB200DF6BF8 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		93DEBC8527F3B59E00E24D89 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,89 @@
 		93988D6B27DA473400DF6BF8 /* SofaAcademyMarch */ = {
 			isa = PBXGroup;
 			children = (
+				93DEBC7D27F3B4BD00E24D89 /* UIFlow */,
+				93DEBC7F27F3B51800E24D89 /* Common */,
+				93DEBC7E27F3B50A00E24D89 /* Data */,
+				93DEBC8727F3B61C00E24D89 /* SupportingFiles */,
+			);
+			path = SofaAcademyMarch;
+			sourceTree = "<group>";
+		};
+		93DEBC7D27F3B4BD00E24D89 /* UIFlow */ = {
+			isa = PBXGroup;
+			children = (
+				93988D8227DA4AB200DF6BF8 /* ProfileVC.swift */,
+				93988D8027DA4AA800DF6BF8 /* SearchVC.swift */,
+				93988D7027DA473400DF6BF8 /* ViewController.swift */,
+			);
+			path = UIFlow;
+			sourceTree = "<group>";
+		};
+		93DEBC7E27F3B50A00E24D89 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		93DEBC7F27F3B51800E24D89 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				93DEBC8427F3B58700E24D89 /* Fonts */,
+				93DEBC8327F3B57A00E24D89 /* Extensions */,
+				93DEBC8227F3B56B00E24D89 /* CustomViews */,
+				93DEBC8127F3B52A00E24D89 /* Base */,
+				93DEBC8027F3B52200E24D89 /* PopUpManager */,
+				93DEBC8527F3B59E00E24D89 /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		93DEBC8027F3B52200E24D89 /* PopUpManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PopUpManager;
+			sourceTree = "<group>";
+		};
+		93DEBC8127F3B52A00E24D89 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		93DEBC8227F3B56B00E24D89 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		93DEBC8327F3B57A00E24D89 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		93DEBC8427F3B58700E24D89 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		93DEBC8727F3B61C00E24D89 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				93988D6C27DA473400DF6BF8 /* AppDelegate.swift */,
 				93988D6E27DA473400DF6BF8 /* SceneDelegate.swift */,
-				93988D7027DA473400DF6BF8 /* ViewController.swift */,
-				93988D8027DA4AA800DF6BF8 /* SearchVC.swift */,
-				93988D8227DA4AB200DF6BF8 /* ProfileVC.swift */,
 				93988D7527DA473500DF6BF8 /* Assets.xcassets */,
 				93988D7727DA473500DF6BF8 /* LaunchScreen.storyboard */,
 				93988D7A27DA473500DF6BF8 /* Info.plist */,
 			);
-			path = SofaAcademyMarch;
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +220,7 @@
 				93988D6D27DA473400DF6BF8 /* AppDelegate.swift in Sources */,
 				93988D6F27DA473400DF6BF8 /* SceneDelegate.swift in Sources */,
 				93988D8327DA4AB200DF6BF8 /* ProfileVC.swift in Sources */,
+				93DEBC8627F3B59E00E24D89 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +363,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6TL325MDWU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SofaAcademyMarch/Info.plist;
+				INFOPLIST_FILE = SofaAcademyMarch/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -315,7 +391,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6TL325MDWU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SofaAcademyMarch/Info.plist;
+				INFOPLIST_FILE = SofaAcademyMarch/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
