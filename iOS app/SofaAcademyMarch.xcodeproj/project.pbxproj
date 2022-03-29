@@ -21,6 +21,10 @@
 		93DEBC8D27F3B80100E24D89 /* PopUpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DEBC8C27F3B80100E24D89 /* PopUpManager.swift */; };
 		93DEBC8F27F3B8C200E24D89 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DEBC8E27F3B8C200E24D89 /* BaseViewController.swift */; };
 		93DEBC9127F3BD5600E24D89 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DEBC9027F3BD5600E24D89 /* BaseView.swift */; };
+		93DEBC9327F3BDD200E24D89 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DEBC9227F3BDD200E24D89 /* CustomLabel.swift */; };
+		93DEBC9627F3BF8500E24D89 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DEBC9527F3BF8500E24D89 /* UILabel+Extensions.swift */; };
+		93DEBC9827F3C01A00E24D89 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DEBC9727F3C01A00E24D89 /* UITextField+Extensions.swift */; };
+		93DEBC9A27F3C0CD00E24D89 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DEBC9927F3C0CD00E24D89 /* UIColor+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		93DEBC8C27F3B80100E24D89 /* PopUpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpManager.swift; sourceTree = "<group>"; };
 		93DEBC8E27F3B8C200E24D89 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		93DEBC9027F3BD5600E24D89 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		93DEBC9227F3BDD200E24D89 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		93DEBC9527F3BF8500E24D89 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
+		93DEBC9727F3C01A00E24D89 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		93DEBC9927F3C0CD00E24D89 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		BFDF9EB4B83C75F296CDE815 /* Pods-SofaAcademyMarch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofaAcademyMarch.debug.xcconfig"; path = "Target Support Files/Pods-SofaAcademyMarch/Pods-SofaAcademyMarch.debug.xcconfig"; sourceTree = "<group>"; };
 		CBDF34C3E71CF336CAD10426 /* Pods-SofaAcademyMarch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofaAcademyMarch.release.xcconfig"; path = "Target Support Files/Pods-SofaAcademyMarch/Pods-SofaAcademyMarch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -154,6 +162,7 @@
 		93DEBC8227F3B56B00E24D89 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				93DEBC9227F3BDD200E24D89 /* CustomLabel.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -161,6 +170,9 @@
 		93DEBC8327F3B57A00E24D89 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				93DEBC9527F3BF8500E24D89 /* UILabel+Extensions.swift */,
+				93DEBC9727F3C01A00E24D89 /* UITextField+Extensions.swift */,
+				93DEBC9927F3C0CD00E24D89 /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -299,12 +311,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				93DEBC8D27F3B80100E24D89 /* PopUpManager.swift in Sources */,
+				93DEBC9A27F3C0CD00E24D89 /* UIColor+Extensions.swift in Sources */,
 				93988D8127DA4AA800DF6BF8 /* SearchVC.swift in Sources */,
 				93988D7127DA473400DF6BF8 /* ViewController.swift in Sources */,
+				93DEBC9627F3BF8500E24D89 /* UILabel+Extensions.swift in Sources */,
 				93DEBC8927F3B7EC00E24D89 /* AlertView.swift in Sources */,
 				93DEBC8B27F3B7F700E24D89 /* AlertViewController.swift in Sources */,
 				93DEBC8F27F3B8C200E24D89 /* BaseViewController.swift in Sources */,
+				93DEBC9827F3C01A00E24D89 /* UITextField+Extensions.swift in Sources */,
 				93988D6D27DA473400DF6BF8 /* AppDelegate.swift in Sources */,
+				93DEBC9327F3BDD200E24D89 /* CustomLabel.swift in Sources */,
 				93988D6F27DA473400DF6BF8 /* SceneDelegate.swift in Sources */,
 				93988D8327DA4AB200DF6BF8 /* ProfileVC.swift in Sources */,
 				93DEBC9127F3BD5600E24D89 /* BaseView.swift in Sources */,

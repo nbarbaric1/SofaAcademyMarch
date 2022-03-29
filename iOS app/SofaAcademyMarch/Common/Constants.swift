@@ -28,3 +28,12 @@ struct Constants {
 //
 //    }
 }
+
+// MARK: - Custom Fonts
+
+enum CustomFontName: String {
+    // TODO: add custom font files when design is ready
+    case nameRegular = "nameOfFont"
+    case nameBold = "...."
+    case nameItalic = "..."
+}

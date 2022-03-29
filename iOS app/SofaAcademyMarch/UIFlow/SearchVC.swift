@@ -14,6 +14,7 @@ class SearchVC: UIViewController {
     let imageView3 = UIImageView()
     let imageView4 = UIImageView()
     let imageView5 = UIImageView()
+    let label = CustomLabel(text: "konj", textSize: 20, textColor: .systemBrown, fontName: .nameRegular, alignment: .right)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +32,7 @@ class SearchVC: UIViewController {
         view.addSubview(imageView3)
         view.addSubview(imageView4)
         view.addSubview(imageView5)
+        view.addSubview(label)
         
         imageView1.translatesAutoresizingMaskIntoConstraints = false
         imageView2.translatesAutoresizingMaskIntoConstraints = false
@@ -45,6 +47,8 @@ class SearchVC: UIViewController {
         imageView5.image = .checkmark
         
         let safeArea = view.safeAreaLayoutGuide
+        
+        label.snp.makeConstraints{ $0.centerX.centerY.equalToSuperview()}
         
         NSLayoutConstraint.activate([
             imageView1.widthAnchor.constraint(equalToConstant: 100),
