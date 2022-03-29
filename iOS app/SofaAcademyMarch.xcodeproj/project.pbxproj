@@ -18,6 +18,7 @@
 		93DEBC8927F3B7EC00E24D89 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DEBC8827F3B7EC00E24D89 /* AlertView.swift */; };
 		93DEBC8B27F3B7F700E24D89 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DEBC8A27F3B7F700E24D89 /* AlertViewController.swift */; };
 		93DEBC8D27F3B80100E24D89 /* PopUpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DEBC8C27F3B80100E24D89 /* PopUpManager.swift */; };
+		93DEBC8F27F3B8C200E24D89 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DEBC8E27F3B8C200E24D89 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		93DEBC8827F3B7EC00E24D89 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		93DEBC8A27F3B7F700E24D89 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		93DEBC8C27F3B80100E24D89 /* PopUpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpManager.swift; sourceTree = "<group>"; };
+		93DEBC8E27F3B8C200E24D89 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		93DEBC8127F3B52A00E24D89 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				93DEBC8E27F3B8C200E24D89 /* BaseViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				93988D7127DA473400DF6BF8 /* ViewController.swift in Sources */,
 				93DEBC8927F3B7EC00E24D89 /* AlertView.swift in Sources */,
 				93DEBC8B27F3B7F700E24D89 /* AlertViewController.swift in Sources */,
+				93DEBC8F27F3B8C200E24D89 /* BaseViewController.swift in Sources */,
 				93988D6D27DA473400DF6BF8 /* AppDelegate.swift in Sources */,
 				93988D6F27DA473400DF6BF8 /* SceneDelegate.swift in Sources */,
 				93988D8327DA4AB200DF6BF8 /* ProfileVC.swift in Sources */,
