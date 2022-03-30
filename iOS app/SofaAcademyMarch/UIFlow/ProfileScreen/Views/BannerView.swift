@@ -10,7 +10,7 @@ import UIKit
 class BannerView: UIView {
     private let bannerText: String
     private let textLabel = CustomLabel(text: "bannerText", textSize: 26, textColor: .black)
-    private let logoImageView = UIImageView(image: UIImage(named: "appleLogo"))
+    private let logoImageView = UIImageView(image: UIImage(systemName: "applelogo"))
     private let containerView = UIView()
     
     init(text: String) {
@@ -37,6 +37,7 @@ extension BannerView: BaseView {
         containerView.layer.masksToBounds = true
         textLabel.text = bannerText
         logoImageView.contentMode = .scaleAspectFit
+        logoImageView.tintColor = .black
     }
     
     func positionSubviews() {
