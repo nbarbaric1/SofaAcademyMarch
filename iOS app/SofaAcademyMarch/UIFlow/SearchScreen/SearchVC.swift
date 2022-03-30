@@ -45,7 +45,7 @@ private extension SearchVC {
                                              message: "Please enter player's name. We need to know who to look for.",
                                              orientation: .horizontal,
                                              closures: [("OK", test)
-                                                        ,("Not OK", test)
+//                                                        ,("Not OK", test)
                                                        ])
             return
         }
@@ -60,6 +60,7 @@ private extension SearchVC {
 extension SearchVC: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.endEditing(true)
         pushVC()
         return true
     }
