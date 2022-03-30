@@ -8,11 +8,16 @@
 import Foundation
 import UIKit
 
-class ProfileVC: UIViewController {
-    
+class ProfileVC: BaseViewController {
+    private let profileView = ProfileView()
+}
+
+// MARK: - Lifecycle methods
+
+extension ProfileVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemRed
-        
+        setupView(profileView)
     }
 }
