@@ -29,6 +29,7 @@
 		93FC17EF27F3CD4A008E65F9 /* RowInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FC17EE27F3CD4A008E65F9 /* RowInfoView.swift */; };
 		93FC17F127F3CFAF008E65F9 /* InfoStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FC17F027F3CFAF008E65F9 /* InfoStackView.swift */; };
 		93FC17F327F3D2AE008E65F9 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FC17F227F3D2AE008E65F9 /* BannerView.swift */; };
+		93FC17F527F3DAD1008E65F9 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FC17F427F3DAD1008E65F9 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		93FC17EE27F3CD4A008E65F9 /* RowInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowInfoView.swift; sourceTree = "<group>"; };
 		93FC17F027F3CFAF008E65F9 /* InfoStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoStackView.swift; sourceTree = "<group>"; };
 		93FC17F227F3D2AE008E65F9 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		93FC17F427F3DAD1008E65F9 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		BFDF9EB4B83C75F296CDE815 /* Pods-SofaAcademyMarch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofaAcademyMarch.debug.xcconfig"; path = "Target Support Files/Pods-SofaAcademyMarch/Pods-SofaAcademyMarch.debug.xcconfig"; sourceTree = "<group>"; };
 		CBDF34C3E71CF336CAD10426 /* Pods-SofaAcademyMarch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofaAcademyMarch.release.xcconfig"; path = "Target Support Files/Pods-SofaAcademyMarch/Pods-SofaAcademyMarch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				93DEBC9227F3BDD200E24D89 /* CustomLabel.swift */,
+				93FC17F427F3DAD1008E65F9 /* CustomTextField.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				93DEBC9A27F3C0CD00E24D89 /* UIColor+Extensions.swift in Sources */,
 				93FC17F327F3D2AE008E65F9 /* BannerView.swift in Sources */,
 				93988D8127DA4AA800DF6BF8 /* SearchVC.swift in Sources */,
+				93FC17F527F3DAD1008E65F9 /* CustomTextField.swift in Sources */,
 				93DEBC9627F3BF8500E24D89 /* UILabel+Extensions.swift in Sources */,
 				93DEBC8927F3B7EC00E24D89 /* AlertView.swift in Sources */,
 				93FC17EF27F3CD4A008E65F9 /* RowInfoView.swift in Sources */,

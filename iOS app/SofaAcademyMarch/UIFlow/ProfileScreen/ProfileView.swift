@@ -14,6 +14,7 @@ class ProfileView: UIView {
     private let subtitleLabel = CustomLabel(text: "Class 2022", textSize: 16, textColor: .black)
     private let bannerView = BannerView(text: "SofaScore")
     private let infoStackView = InfoStackView()
+    
     init() {
         super.init(frame: .zero)
         setupView()

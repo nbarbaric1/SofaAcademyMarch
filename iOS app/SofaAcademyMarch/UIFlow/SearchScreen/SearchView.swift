@@ -9,6 +9,8 @@ import UIKit
 
 class SearchView: UIView {
     
+    let searchTextfield = CustomTextField()
+    
     init() {
         super.init(frame: .zero)
         setupView()
@@ -22,7 +24,7 @@ class SearchView: UIView {
 extension SearchView: BaseView {
     
     func addSubviews() {
-        
+        addSubview(searchTextfield)
     }
     
     func styleSubviews() {
@@ -30,7 +32,10 @@ extension SearchView: BaseView {
     }
     
     func positionSubviews() {
-        
+        searchTextfield.snp.makeConstraints {
+            $0.centerY.centerX.equalToSuperview()
+            $0.width.equalTo(300)
+            $0.height.equalTo(40)
+        }
     }
 }
-
