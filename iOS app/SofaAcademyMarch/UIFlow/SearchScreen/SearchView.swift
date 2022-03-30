@@ -28,7 +28,7 @@ extension SearchView: BaseView {
     }
     
     func styleSubviews() {
-        
+        searchTextfield.returnKeyType = .default
     }
     
     func positionSubviews() {
