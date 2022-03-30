@@ -42,7 +42,7 @@ private extension AlertView {
     }
     
     func configureButtons(buttonTexts: [String], orientation: NSLayoutConstraint.Axis) {
-        for (i, text) in buttonTexts.enumerated() {
+        for text in buttonTexts {
             let button = UIButton()
             button.setTitle(text, for: .normal)
             button.addTarget(self, action: #selector(buttonActionHandler), for: .touchUpInside)
