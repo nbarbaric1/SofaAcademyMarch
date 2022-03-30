@@ -33,11 +33,20 @@ private extension SearchVC {
         searchView.searchTextfield.delegate = self
     }
     
+    func test() {
+        print("poz")
+    }
+    
     func pushVC(){
         guard let playerName = searchView.searchTextfield.text,
               !playerName.isEmpty
         else {
-            
+            PopUpManager.shared.presentAlert(title: "Empty player name",
+                                             message: "Please enter player's name. We need to know who to look for.",
+                                             orientation: .horizontal,
+                                             closures: [("OK", test)
+                                                        ,("Not OK", test)
+                                                       ])
             return
         }
         
