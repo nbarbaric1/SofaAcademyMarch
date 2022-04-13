@@ -4,12 +4,13 @@
 //
 //  Created by Nikola Barbarić on 10.03.2022..
 //
-
+import Combine
 import UIKit
 
 class SearchVC: BaseViewController {
     private let searchView = SearchView()
-    private let cities: [City] = []
+    private var cities: [City] = []
+    private var subscriptions = Set<AnyCancellable>()
 }
 
 // MARK: - Lifecycle methods
@@ -64,7 +65,15 @@ extension SearchVC: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.endEditing(true)
-        pushVC()
+//        pushVC()
+        NetworkManger.shared.getCities(inputText: "tag").sink { completion in
+            
+        } receiveValue: { [weak self] cities in
+            guard let self = self else { return }
+            self.cities = cities
+            self.searchView.citiesTableView.reloadData()
+        }.store(in: &subscriptions)
+
         return true
     }
 }
@@ -80,7 +89,7 @@ extension SearchVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CityTableViewCell.reuseIdentifier, for: indexPath) as? CityTableViewCell
-        cell?.configureCell(with: City(name: "Zagreb"))
+        cell?.configureCell(with: cities[indexPath.row])
         return cell ?? UITableViewCell()
     }
 }
