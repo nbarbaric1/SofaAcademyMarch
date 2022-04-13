@@ -64,10 +64,20 @@ private extension SearchVC {
 extension SearchVC: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        guard let text = textField.text,
+              !text.isEmpty
+        else { return false}
+        
         textField.endEditing(true)
-//        pushVC()
-        NetworkManger.shared.getCities(inputText: "tag").sink { completion in
-            
+        
+        NetworkManger.shared.getCities(inputText: text).sink { [weak self] completion in
+            guard let self = self else { return }
+            switch completion {
+            case .finished:
+                break
+            case let .failure(error):
+                PopUpManager.shared.presentAlert(title: "Error", message: error.localizedDescription, orientation: .vertical, closures: [("OK", self.test)])
+            }
         } receiveValue: { [weak self] cities in
             guard let self = self else { return }
             self.cities = cities

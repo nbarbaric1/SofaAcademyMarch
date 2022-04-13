@@ -33,7 +33,7 @@ extension CityTableViewCell: BaseView {
     
     func positionSubviews() {
         nameLabel.snp.makeConstraints {
-            $0.centerX.centerY.equalToSuperview()
+            $0.edges.equalToSuperview().inset(10)
         }
     }
 }
@@ -44,6 +44,6 @@ extension CityTableViewCell {
     }
     
     func configureCell(with city: City) {
-        nameLabel.text = city.name
+        nameLabel.text = city.title
     }
 }
