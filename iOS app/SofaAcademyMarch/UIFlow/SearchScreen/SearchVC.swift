@@ -9,6 +9,7 @@ import UIKit
 
 class SearchVC: BaseViewController {
     private let searchView = SearchView()
+    private let cities: [City] = []
 }
 
 // MARK: - Lifecycle methods
@@ -31,6 +32,8 @@ private extension SearchVC {
     
     func setupBindings() {
         searchView.searchTextfield.delegate = self
+        searchView.citiesTableView.delegate = self
+        searchView.citiesTableView.dataSource = self
     }
     
     func test() {
@@ -63,5 +66,21 @@ extension SearchVC: UITextFieldDelegate {
         textField.endEditing(true)
         pushVC()
         return true
+    }
+}
+
+extension SearchVC: UITableViewDelegate {
+    
+}
+
+extension SearchVC: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        cities.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: CityTableViewCell.reuseIdentifier, for: indexPath) as? CityTableViewCell
+        cell?.configureCell(with: City(name: "Zagreb"))
+        return cell ?? UITableViewCell()
     }
 }
