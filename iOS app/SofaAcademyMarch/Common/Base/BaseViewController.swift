@@ -7,8 +7,11 @@
 
 import UIKit
 import SnapKit
+import Combine
 
 class BaseViewController: UIViewController {
+    
+    var subscriptions = Set<AnyCancellable>()
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)

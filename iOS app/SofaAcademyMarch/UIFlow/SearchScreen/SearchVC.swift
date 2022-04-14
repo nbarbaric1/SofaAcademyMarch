@@ -10,7 +10,6 @@ import UIKit
 class SearchVC: BaseViewController {
     private let searchView = SearchView()
     private var cities: [City] = []
-    private var subscriptions = Set<AnyCancellable>()
 }
 
 // MARK: - Lifecycle methods
@@ -41,7 +40,7 @@ private extension SearchVC {
         print("poz")
     }
     
-    func pushVC(){
+    func pushProfileVC(){
         guard let playerName = searchView.searchTextfield.text,
               !playerName.isEmpty
         else {
@@ -57,6 +56,12 @@ private extension SearchVC {
         let profileVC = ProfileVC()
         profileVC.title = playerName
         navigationController?.pushViewController(profileVC, animated: true)
+    }
+    
+    func presentCityWeatherDetailsVC(woeid: Int) {
+        let weatherDetailsVC = CityWeatherDetailsVC(woeid: woeid)
+        weatherDetailsVC.title = "Details"
+        navigationController?.present(weatherDetailsVC, animated: true)
     }
 }
 
@@ -89,7 +94,11 @@ extension SearchVC: UITextFieldDelegate {
 }
 
 extension SearchVC: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let woeid = cities[indexPath.row].woeid
+        presentCityWeatherDetailsVC(woeid: woeid)
+    }
 }
 
 extension SearchVC: UITableViewDataSource {
