@@ -10,11 +10,11 @@ import UIKit
 
 class InfoView: UIView {
     
-    private let publicRepoLabel = CustomLabel(text: "Public repo")
-    private let privateRepoLabel = CustomLabel(text: "Private repo")
-    private let publicRepoCountLabel = CustomLabel(text: "54")
-    private let privateRepoCountLabel = CustomLabel(text: "543")
-    private let button = CustomButton(text: "test", color: .green)
+    let leftLabel = CustomLabel(text: " ")
+    let rightLabel = CustomLabel(text: " ")
+    let leftCountLabel = CustomLabel(text: " ")
+    let rightCountLabel = CustomLabel(text: " ")
+    let button = CustomButton(text: " ", color: .gray)
     
     init() {
         super.init(frame: .zero)
@@ -28,10 +28,10 @@ class InfoView: UIView {
 
 extension InfoView: BaseView {
     func addSubviews() {
-        addSubview(publicRepoLabel)
-        addSubview(privateRepoLabel)
-        addSubview(publicRepoCountLabel)
-        addSubview(privateRepoCountLabel)
+        addSubview(leftLabel)
+        addSubview(rightLabel)
+        addSubview(leftCountLabel)
+        addSubview(rightCountLabel)
         addSubview(button)
     }
     
@@ -41,28 +41,28 @@ extension InfoView: BaseView {
     }
     
     func positionSubviews() {
-        publicRepoLabel.snp.makeConstraints { make in
+        leftLabel.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(30)
             make.top.equalToSuperview().offset(30)
         }
         
-        privateRepoLabel.snp.makeConstraints { make in
+        rightLabel.snp.makeConstraints { make in
             make.trailing.equalToSuperview().offset(-30)
             make.top.equalToSuperview().offset(30)
         }
         
-        publicRepoCountLabel.snp.makeConstraints { make in
-            make.centerX.equalTo(publicRepoLabel.snp.centerX)
-            make.top.equalTo(publicRepoLabel.snp.top).offset(20)
+        leftCountLabel.snp.makeConstraints { make in
+            make.centerX.equalTo(leftLabel.snp.centerX)
+            make.top.equalTo(leftLabel.snp.top).offset(20)
         }
         
-        privateRepoCountLabel.snp.makeConstraints { make in
-            make.centerX.equalTo(privateRepoLabel.snp.centerX)
-            make.top.equalTo(privateRepoLabel.snp.top).offset(20)
+        rightCountLabel.snp.makeConstraints { make in
+            make.centerX.equalTo(rightLabel.snp.centerX)
+            make.top.equalTo(rightLabel.snp.top).offset(20)
         }
         
         button.snp.makeConstraints { make in
-            make.top.equalTo(privateRepoCountLabel.snp.bottom).offset(20)
+            make.top.equalTo(rightCountLabel.snp.bottom).offset(20)
             make.leading.trailing.bottom.equalToSuperview().inset(30)
         }
     }

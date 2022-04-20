@@ -69,4 +69,21 @@ extension NetworkManger {
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }
+    
+    func getInfo(username: String) -> AnyPublisher<User, Error>{
+        let endpoint = "https://api.github.com/users/" + "\(username.lowercased())"
+        
+        print("endpoint: \(endpoint)")
+        guard let url = URL(string: endpoint) else {
+            return Fail<User, Error>(error: ApiError.wrongEndpoint)
+                .receive(on: DispatchQueue.main)
+                .eraseToAnyPublisher()
+        }
+        
+        return URLSession.shared.dataTaskPublisher(for: url)
+            .map(\.data)
+            .decode(type: User.self, decoder: JSONDecoder())
+            .receive(on: DispatchQueue.main)
+            .eraseToAnyPublisher()
+    }
 }

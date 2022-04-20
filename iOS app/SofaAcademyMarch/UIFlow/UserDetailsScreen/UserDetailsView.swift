@@ -41,7 +41,7 @@ extension UserDetailsView: BaseView {
     }
     
     func styleSubviews() {
-        
+        descriptionLabel.numberOfLines = 0 
     }
     
     func positionSubviews() {
@@ -86,6 +86,28 @@ extension UserDetailsView: BaseView {
             $0.height.equalTo(150)
         }
     }
-    
-    
+}
+
+extension UserDetailsView {
+    func updateView(user: User) {
+        nameLabel.text = user.name
+        descriptionLabel.text = user.description
+        loginLabel.text = user.login
+        locationLabel.text = user.location
+        userSinceLabel.text = user.createdAt
+        
+        repoInfoView.leftLabel.text = "Public repo"
+        repoInfoView.leftCountLabel.text = "\(user.publicReposCount)"
+        repoInfoView.rightLabel.text = "Public gists"
+        repoInfoView.rightCountLabel.text = "\(user.publicGistsCount)"
+        repoInfoView.button.setTitle("Github profile", for: .normal)
+        repoInfoView.button.backgroundColor = .systemPink
+        
+        followersInfoView.leftLabel.text = "Followers"
+        followersInfoView.leftCountLabel.text = "\(user.followersCount)"
+        followersInfoView.rightLabel.text = "Following"
+        followersInfoView.rightCountLabel.text = "\(user.followingCount)"
+        followersInfoView.button.setTitle("Get followers?", for: .normal)
+        followersInfoView.button.backgroundColor = .systemBlue
+    }
 }

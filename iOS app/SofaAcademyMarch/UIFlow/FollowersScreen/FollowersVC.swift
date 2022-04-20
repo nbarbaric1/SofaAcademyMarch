@@ -31,14 +31,13 @@ private extension FollowersVC {
     }
     
     func setupBindings() {
-        print("FollowersVC", username)
         followersView.collectionView.delegate = self
         followersView.collectionView.dataSource = self
     }
     
-    func presentUserDetailsVC(id: Int) {
+    func presentUserDetailsVC(username: String) {
         let userDetailsVC = UserDetailsVC()
-        userDetailsVC.id = id
+        userDetailsVC.username = username
         userDetailsVC.title = "User Details"
         navigationController?.present(userDetailsVC, animated: true)
     }
@@ -64,9 +63,9 @@ private extension FollowersVC{
     }
 }
 
-extension FollowersVC: UICollectionViewDelegate {
+extension FollowersVC: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        presentUserDetailsVC(id: followers[indexPath.row].id)
+        presentUserDetailsVC(username: followers[indexPath.row].login)
     }
 }
 
