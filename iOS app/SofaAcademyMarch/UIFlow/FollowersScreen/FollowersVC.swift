@@ -36,8 +36,9 @@ private extension FollowersVC {
         followersView.collectionView.dataSource = self
     }
     
-    func presentUserDetailsVC(woeid: Int) {
+    func presentUserDetailsVC(id: Int) {
         let userDetailsVC = UserDetailsVC()
+        userDetailsVC.id = id
         userDetailsVC.title = "User Details"
         navigationController?.present(userDetailsVC, animated: true)
     }
@@ -64,7 +65,9 @@ private extension FollowersVC{
 }
 
 extension FollowersVC: UICollectionViewDelegate {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        presentUserDetailsVC(id: followers[indexPath.row].id)
+    }
 }
 
 extension FollowersVC: UICollectionViewDataSource {

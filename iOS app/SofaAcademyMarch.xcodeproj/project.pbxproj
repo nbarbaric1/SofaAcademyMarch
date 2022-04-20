@@ -14,6 +14,8 @@
 		933583312810A8A400D3581F /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933583302810A8A400D3581F /* UserDetailsView.swift */; };
 		933583332810ADFE00D3581F /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933583322810ADFE00D3581F /* Follower.swift */; };
 		933583352810B2B000D3581F /* FollowerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933583342810B2B000D3581F /* FollowerCollectionViewCell.swift */; };
+		933583372810BD8800D3581F /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933583362810BD8800D3581F /* InfoView.swift */; };
+		933583392810C0A200D3581F /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933583382810C0A200D3581F /* CustomButton.swift */; };
 		935622A3280784B600B4B7D2 /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935622A2280784B600B4B7D2 /* CityTableViewCell.swift */; };
 		935622A5280786C700B4B7D2 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935622A4280786C700B4B7D2 /* City.swift */; };
 		935622A82807886E00B4B7D2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935622A72807886E00B4B7D2 /* NetworkManager.swift */; };
@@ -52,6 +54,8 @@
 		933583302810A8A400D3581F /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
 		933583322810ADFE00D3581F /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		933583342810B2B000D3581F /* FollowerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCollectionViewCell.swift; sourceTree = "<group>"; };
+		933583362810BD8800D3581F /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		933583382810C0A200D3581F /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		935622A2280784B600B4B7D2 /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
 		935622A4280786C700B4B7D2 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		935622A72807886E00B4B7D2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -129,6 +133,7 @@
 			children = (
 				9335832E2810A89A00D3581F /* UserDetailsVC.swift */,
 				933583302810A8A400D3581F /* UserDetailsView.swift */,
+				933583362810BD8800D3581F /* InfoView.swift */,
 			);
 			path = UserDetailsScreen;
 			sourceTree = "<group>";
@@ -250,6 +255,7 @@
 			children = (
 				93DEBC9227F3BDD200E24D89 /* CustomLabel.swift */,
 				93FC17F427F3DAD1008E65F9 /* CustomTextField.swift */,
+				933583382810C0A200D3581F /* CustomButton.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -426,6 +432,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93DEBC8D27F3B80100E24D89 /* PopUpManager.swift in Sources */,
+				933583372810BD8800D3581F /* InfoView.swift in Sources */,
 				93DEBC9A27F3C0CD00E24D89 /* UIColor+Extensions.swift in Sources */,
 				935622A3280784B600B4B7D2 /* CityTableViewCell.swift in Sources */,
 				93FC17F327F3D2AE008E65F9 /* BannerView.swift in Sources */,
@@ -454,6 +461,7 @@
 				93988D6F27DA473400DF6BF8 /* SceneDelegate.swift in Sources */,
 				93988D8327DA4AB200DF6BF8 /* ProfileVC.swift in Sources */,
 				9335832A2810A71A00D3581F /* FollowersVC.swift in Sources */,
+				933583392810C0A200D3581F /* CustomButton.swift in Sources */,
 				93DEBC9127F3BD5600E24D89 /* BaseView.swift in Sources */,
 				93DEBC8627F3B59E00E24D89 /* Constants.swift in Sources */,
 				935622A5280786C700B4B7D2 /* City.swift in Sources */,
