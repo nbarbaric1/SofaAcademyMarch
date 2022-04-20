@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SafariServices
 
 class UserDetailsVC: BaseViewController {
     var username: String!
@@ -25,7 +26,7 @@ extension UserDetailsVC {
     }
     
     func setupBindings() {
-        
+        userDetailsView.repoInfoView.button.addTarget(self, action: #selector(openWebProfile), for: .touchUpInside)
     }
 }
 
@@ -44,9 +45,21 @@ extension UserDetailsVC {
         } receiveValue: { [weak self] user in
             guard let self = self else { return }
             self.userDetailsView.updateView(user: user)
-            print("user stigo: ", user)
-            
         }.store(in: &subscriptions)
-        
     }
+}
+
+extension UserDetailsVC {
+    @objc func openWebProfile() {
+        let endpoint = "https://github.com/" + username
+        guard let url = URL(string: endpoint) else { return }
+        
+        let safariVC = SFSafariViewController(url: url)
+        safariVC.delegate = self
+        self.present(safariVC, animated: true)
+    }
+}
+
+extension UserDetailsVC: SFSafariViewControllerDelegate {
+    
 }

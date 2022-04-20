@@ -16,7 +16,7 @@ class UserDetailsView: UIView {
     private let locationLabel = CustomLabel(text: "Saint louis")
     private let descriptionLabel = CustomLabel(text: "lead software bla bla bala enciklipericjasdfs")
     private let userSinceLabel = CustomLabel(text: "User since 2009 listooad")
-    private let repoInfoView = InfoView()
+    let repoInfoView = InfoView()
     private let followersInfoView = InfoView()
 
     init() {
@@ -38,10 +38,11 @@ extension UserDetailsView: BaseView {
         addSubview(descriptionLabel)
         addSubview(repoInfoView)
         addSubview(followersInfoView)
+        addSubview(userSinceLabel)
     }
     
     func styleSubviews() {
-        descriptionLabel.numberOfLines = 0 
+        descriptionLabel.numberOfLines = 0
     }
     
     func positionSubviews() {
@@ -85,6 +86,11 @@ extension UserDetailsView: BaseView {
             $0.width.equalTo(330)
             $0.height.equalTo(150)
         }
+        
+        userSinceLabel.snp.makeConstraints { make in
+            make.top.equalTo(followersInfoView.snp.bottom)
+            make.centerX.equalToSuperview()
+        }
     }
 }
 
@@ -94,7 +100,7 @@ extension UserDetailsView {
         descriptionLabel.text = user.description
         loginLabel.text = user.login
         locationLabel.text = user.location
-        userSinceLabel.text = user.createdAt
+        userSinceLabel.text = user.userSince()
         
         repoInfoView.leftLabel.text = "Public repo"
         repoInfoView.leftCountLabel.text = "\(user.publicReposCount)"

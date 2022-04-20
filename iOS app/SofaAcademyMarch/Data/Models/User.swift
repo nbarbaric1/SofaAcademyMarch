@@ -31,4 +31,9 @@ struct User: Decodable {
         case followingCount = "following"
         case createdAt = "created_at"
     }
+    
+    func userSince() -> String? {
+        // TODO: convert createdAt to date
+        return createdAt
+    }
 }

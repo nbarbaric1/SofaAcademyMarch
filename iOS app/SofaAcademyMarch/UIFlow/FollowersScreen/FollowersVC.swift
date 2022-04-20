@@ -45,9 +45,11 @@ private extension FollowersVC {
 
 private extension FollowersVC{
     func getFollowers() {
-        NetworkManger.shared.getFollowers(for: username).sink { completion in
+        showLoading()
+        NetworkManger.shared.getFollowers(for: username).sink { [weak self] completion in
+            guard let self = self else { return }
+            self.hideLoading()
             switch completion {
-                
             case .finished:
                 break
             case .failure(_):
