@@ -46,9 +46,16 @@ extension ProfileView: BaseView {
     
     func positionSubviews() {
         
+        githubSearchTextField.snp.makeConstraints {
+            $0.top.equalToSuperview().offset(140)
+            $0.centerX.equalToSuperview()
+            $0.width.equalTo(300)
+            $0.height.equalTo(50)
+        }
+        
         aboutLabel.snp.makeConstraints {
             $0.leading.equalToSuperview().offset(30)
-            $0.top.equalToSuperview().offset(100)
+            $0.top.equalTo(githubSearchTextField.snp.bottom).offset(40)
         }
         
         titleLabel.snp.makeConstraints {
@@ -73,13 +80,6 @@ extension ProfileView: BaseView {
             $0.leading.equalToSuperview().offset(30)
             $0.trailing.equalToSuperview().offset(-30)
             $0.height.equalTo(200)
-        }
-        
-        githubSearchTextField.snp.makeConstraints {
-            $0.top.equalTo(infoStackView.snp.bottom).offset(30)
-            $0.centerX.equalToSuperview()
-            $0.width.equalTo(300)
-            $0.height.equalTo(50)
         }
     }
 }
