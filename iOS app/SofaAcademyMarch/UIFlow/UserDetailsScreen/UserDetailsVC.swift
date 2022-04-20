@@ -24,6 +24,6 @@ extension UserDetailsVC {
     }
     
     func setupBindings() {
-        
+        showLoading()
     }
 }
