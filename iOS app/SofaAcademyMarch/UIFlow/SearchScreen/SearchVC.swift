@@ -31,7 +31,7 @@ private extension SearchVC {
     }
     
     func setupBindings() {
-        searchView.searchTextfield.delegate = self
+        searchView.citySearchTextfield.delegate = self
         searchView.citiesTableView.delegate = self
         searchView.citiesTableView.dataSource = self
     }
@@ -41,7 +41,7 @@ private extension SearchVC {
     }
     
     func pushProfileVC(){
-        guard let playerName = searchView.searchTextfield.text,
+        guard let playerName = searchView.citySearchTextfield.text,
               !playerName.isEmpty
         else {
             PopUpManager.shared.presentAlert(title: "Empty player name",

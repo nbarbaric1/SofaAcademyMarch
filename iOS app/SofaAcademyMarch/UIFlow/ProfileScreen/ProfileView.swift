@@ -14,6 +14,7 @@ class ProfileView: UIView {
     private let subtitleLabel = CustomLabel(text: "Class 2022", textSize: 16, textColor: .black)
     private let bannerView = BannerView(text: "SofaScore")
     private let infoStackView = InfoStackView()
+    private let githubSearchTextField = CustomTextField()
     
     init() {
         super.init(frame: .zero)
@@ -35,13 +36,16 @@ extension ProfileView: BaseView {
         addSubview(subtitleLabel)
         addSubview(bannerView)
         addSubview(infoStackView)
+        addSubview(githubSearchTextField)
     }
     
     func styleSubviews() {
-        
+        githubSearchTextField.returnKeyType = .continue
+        githubSearchTextField.placeholder = "Enter github username..."
     }
     
     func positionSubviews() {
+        
         aboutLabel.snp.makeConstraints {
             $0.leading.equalToSuperview().offset(30)
             $0.top.equalToSuperview().offset(100)
@@ -69,6 +73,13 @@ extension ProfileView: BaseView {
             $0.leading.equalToSuperview().offset(30)
             $0.trailing.equalToSuperview().offset(-30)
             $0.height.equalTo(200)
+        }
+        
+        githubSearchTextField.snp.makeConstraints {
+            $0.top.equalTo(infoStackView.snp.bottom).offset(30)
+            $0.centerX.equalToSuperview()
+            $0.width.equalTo(300)
+            $0.height.equalTo(50)
         }
     }
 }
