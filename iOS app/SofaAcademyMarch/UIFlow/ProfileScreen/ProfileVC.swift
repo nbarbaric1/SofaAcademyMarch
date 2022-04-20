@@ -50,6 +50,7 @@ private extension ProfileVC {
         }
         
         let followersVC = FollowersVC()
+        followersVC.username = username
         followersVC.title = username
         navigationController?.pushViewController(followersVC, animated: true)
     }

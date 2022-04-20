@@ -9,6 +9,7 @@ import UIKit
 
 class FollowersVC: BaseViewController {
     private let followersView = FollowersView()
+    var username: String!
 }
 
 // MARK: - Lifecycle methods
@@ -28,7 +29,7 @@ private extension FollowersVC {
     }
     
     func setupBindings() {
-        
+        print("FollowersVC", username)
     }
     
     func presentUserDetailsVC(woeid: Int) {
