@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 
 class FollowerCollectionViewCell: UICollectionViewCell, BaseView {
     
@@ -13,6 +14,8 @@ class FollowerCollectionViewCell: UICollectionViewCell, BaseView {
 
     let testLabel = CustomLabel(text: "collection")
     let imageView = UIImageView()
+    
+    var subscriptions = Set<AnyCancellable>()
 
     
     override init(frame: CGRect) {
@@ -26,23 +29,32 @@ class FollowerCollectionViewCell: UICollectionViewCell, BaseView {
     
     
     func addSubviews() {
-        addSubview(testLabel)
         addSubview(imageView)
+        addSubview(testLabel)
     }
     
     func styleSubviews() {
         backgroundColor = .red
-        imageView.image = UIImage(named: "matejVida")
     }
     
     func positionSubviews() {
         testLabel.snp.makeConstraints { make in
             make.center.equalToSuperview()
         }
+        
+        imageView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
     }
     
     func configureCell(_ follower: Follower) {
         testLabel.text = follower.login
+        
+        NetworkManger.shared.downloadImage(from: follower.avatarUrl).receive(on: DispatchQueue.main).sink(receiveCompletion: { c in
+            
+        }, receiveValue: { image in
+            self.imageView.image = image
+        }).store(in: &subscriptions)
     }
     
     override func prepareForReuse() {

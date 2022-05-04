@@ -49,17 +49,12 @@ extension UserDetailsVC {
     }
 }
 
-extension UserDetailsVC {
+extension UserDetailsVC: SFSafariViewControllerDelegate{
     @objc func openWebProfile() {
         let endpoint = "https://github.com/" + username
         guard let url = URL(string: endpoint) else { return }
-        
         let safariVC = SFSafariViewController(url: url)
         safariVC.delegate = self
         self.present(safariVC, animated: true)
     }
-}
-
-extension UserDetailsVC: SFSafariViewControllerDelegate {
-    
 }
