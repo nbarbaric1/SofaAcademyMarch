@@ -12,6 +12,7 @@ import Combine
 class BaseViewController: UIViewController {
     
     var subscriptions = Set<AnyCancellable>()
+    private let activityIndicator = UIActivityIndicatorView()
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -60,5 +61,22 @@ extension BaseViewController {
     
     @objc func dismissKeyboard() {
         view.endEditing(true)
+    }
+}
+
+extension BaseViewController {
+    func showLoading() {
+        view.addSubview(activityIndicator)
+        activityIndicator.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+        activityIndicator.backgroundColor = .lightGray.withAlphaComponent(0.5)
+        activityIndicator.startAnimating()
+    }
+    
+    func hideLoading() {
+        activityIndicator.removeFromSuperview()
+        activityIndicator.stopAnimating()
+        activityIndicator.hidesWhenStopped = true
     }
 }

@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		9101BB654D54FCA85669AB0D /* Pods_SofaAcademyMarch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85C25AFFE5C39CE8FA7FC48E /* Pods_SofaAcademyMarch.framework */; };
+		9335832A2810A71A00D3581F /* FollowersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933583292810A71A00D3581F /* FollowersVC.swift */; };
+		9335832C2810A75900D3581F /* FollowersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9335832B2810A75900D3581F /* FollowersView.swift */; };
+		9335832F2810A89A00D3581F /* UserDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9335832E2810A89A00D3581F /* UserDetailsVC.swift */; };
+		933583312810A8A400D3581F /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933583302810A8A400D3581F /* UserDetailsView.swift */; };
+		933583332810ADFE00D3581F /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933583322810ADFE00D3581F /* Follower.swift */; };
+		933583352810B2B000D3581F /* FollowerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933583342810B2B000D3581F /* FollowerCollectionViewCell.swift */; };
+		933583372810BD8800D3581F /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933583362810BD8800D3581F /* InfoView.swift */; };
+		933583392810C0A200D3581F /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933583382810C0A200D3581F /* CustomButton.swift */; };
+		9335833B2810C59300D3581F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9335833A2810C59300D3581F /* User.swift */; };
 		935622A3280784B600B4B7D2 /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935622A2280784B600B4B7D2 /* CityTableViewCell.swift */; };
 		935622A5280786C700B4B7D2 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935622A4280786C700B4B7D2 /* City.swift */; };
 		935622A82807886E00B4B7D2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935622A72807886E00B4B7D2 /* NetworkManager.swift */; };
@@ -40,6 +49,15 @@
 
 /* Begin PBXFileReference section */
 		85C25AFFE5C39CE8FA7FC48E /* Pods_SofaAcademyMarch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SofaAcademyMarch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		933583292810A71A00D3581F /* FollowersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersVC.swift; sourceTree = "<group>"; };
+		9335832B2810A75900D3581F /* FollowersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersView.swift; sourceTree = "<group>"; };
+		9335832E2810A89A00D3581F /* UserDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsVC.swift; sourceTree = "<group>"; };
+		933583302810A8A400D3581F /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
+		933583322810ADFE00D3581F /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
+		933583342810B2B000D3581F /* FollowerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCollectionViewCell.swift; sourceTree = "<group>"; };
+		933583362810BD8800D3581F /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		933583382810C0A200D3581F /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		9335833A2810C59300D3581F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		935622A2280784B600B4B7D2 /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
 		935622A4280786C700B4B7D2 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		935622A72807886E00B4B7D2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -103,12 +121,32 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		935622A12807849400B4B7D2 /* CustomTableViewCells */ = {
+		933583282810A70A00D3581F /* FollowersScreen */ = {
+			isa = PBXGroup;
+			children = (
+				933583292810A71A00D3581F /* FollowersVC.swift */,
+				9335832B2810A75900D3581F /* FollowersView.swift */,
+			);
+			path = FollowersScreen;
+			sourceTree = "<group>";
+		};
+		9335832D2810A88700D3581F /* UserDetailsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9335832E2810A89A00D3581F /* UserDetailsVC.swift */,
+				933583302810A8A400D3581F /* UserDetailsView.swift */,
+				933583362810BD8800D3581F /* InfoView.swift */,
+			);
+			path = UserDetailsScreen;
+			sourceTree = "<group>";
+		};
+		935622A12807849400B4B7D2 /* CustomCells */ = {
 			isa = PBXGroup;
 			children = (
 				935622A2280784B600B4B7D2 /* CityTableViewCell.swift */,
+				933583342810B2B000D3581F /* FollowerCollectionViewCell.swift */,
 			);
-			path = CustomTableViewCells;
+			path = CustomCells;
 			sourceTree = "<group>";
 		};
 		935622A6280786DA00B4B7D2 /* Models */ = {
@@ -116,6 +154,8 @@
 			children = (
 				935622A4280786C700B4B7D2 /* City.swift */,
 				935622B12807987600B4B7D2 /* WeatherDetails.swift */,
+				933583322810ADFE00D3581F /* Follower.swift */,
+				9335833A2810C59300D3581F /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -161,6 +201,8 @@
 		93DEBC7D27F3B4BD00E24D89 /* UIFlow */ = {
 			isa = PBXGroup;
 			children = (
+				9335832D2810A88700D3581F /* UserDetailsScreen */,
+				933583282810A70A00D3581F /* FollowersScreen */,
 				935622AC2807936800B4B7D2 /* CityWeatherDetailsScreen */,
 				93DEBC9C27F3C4F400E24D89 /* SearchScreen */,
 				93DEBC9B27F3C4EC00E24D89 /* ProfileScreen */,
@@ -181,6 +223,7 @@
 		93DEBC7F27F3B51800E24D89 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				935622A12807849400B4B7D2 /* CustomCells */,
 				93DEBC8427F3B58700E24D89 /* Fonts */,
 				93DEBC8327F3B57A00E24D89 /* Extensions */,
 				93DEBC8227F3B56B00E24D89 /* CustomViews */,
@@ -213,9 +256,9 @@
 		93DEBC8227F3B56B00E24D89 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				935622A12807849400B4B7D2 /* CustomTableViewCells */,
 				93DEBC9227F3BDD200E24D89 /* CustomLabel.swift */,
 				93FC17F427F3DAD1008E65F9 /* CustomTextField.swift */,
+				933583382810C0A200D3581F /* CustomButton.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -392,28 +435,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				93DEBC8D27F3B80100E24D89 /* PopUpManager.swift in Sources */,
+				933583372810BD8800D3581F /* InfoView.swift in Sources */,
 				93DEBC9A27F3C0CD00E24D89 /* UIColor+Extensions.swift in Sources */,
 				935622A3280784B600B4B7D2 /* CityTableViewCell.swift in Sources */,
 				93FC17F327F3D2AE008E65F9 /* BannerView.swift in Sources */,
+				933583332810ADFE00D3581F /* Follower.swift in Sources */,
 				935622A82807886E00B4B7D2 /* NetworkManager.swift in Sources */,
 				935622AB28078CB100B4B7D2 /* ApiError.swift in Sources */,
 				93988D8127DA4AA800DF6BF8 /* SearchVC.swift in Sources */,
 				93FC17F527F3DAD1008E65F9 /* CustomTextField.swift in Sources */,
 				93DEBC9627F3BF8500E24D89 /* UIFont+Extensions.swift in Sources */,
 				93DEBC8927F3B7EC00E24D89 /* AlertView.swift in Sources */,
+				933583312810A8A400D3581F /* UserDetailsView.swift in Sources */,
+				9335832C2810A75900D3581F /* FollowersView.swift in Sources */,
 				93FC17EF27F3CD4A008E65F9 /* RowInfoView.swift in Sources */,
 				93DEBC8B27F3B7F700E24D89 /* AlertViewController.swift in Sources */,
 				93DEBC8F27F3B8C200E24D89 /* BaseViewController.swift in Sources */,
 				935622AE2807938A00B4B7D2 /* CityWeatherDetailsVC.swift in Sources */,
+				9335833B2810C59300D3581F /* User.swift in Sources */,
 				935622B02807939A00B4B7D2 /* CityWeatherDetailsView.swift in Sources */,
 				93FC17F127F3CFAF008E65F9 /* InfoStackView.swift in Sources */,
 				93DEBCA027F3C55800E24D89 /* ProfileView.swift in Sources */,
 				93988D6D27DA473400DF6BF8 /* AppDelegate.swift in Sources */,
 				93DEBC9327F3BDD200E24D89 /* CustomLabel.swift in Sources */,
+				9335832F2810A89A00D3581F /* UserDetailsVC.swift in Sources */,
 				935622B22807987600B4B7D2 /* WeatherDetails.swift in Sources */,
+				933583352810B2B000D3581F /* FollowerCollectionViewCell.swift in Sources */,
 				93DEBC9E27F3C54C00E24D89 /* SearchView.swift in Sources */,
 				93988D6F27DA473400DF6BF8 /* SceneDelegate.swift in Sources */,
 				93988D8327DA4AB200DF6BF8 /* ProfileVC.swift in Sources */,
+				9335832A2810A71A00D3581F /* FollowersVC.swift in Sources */,
+				933583392810C0A200D3581F /* CustomButton.swift in Sources */,
 				93DEBC9127F3BD5600E24D89 /* BaseView.swift in Sources */,
 				93DEBC8627F3B59E00E24D89 /* Constants.swift in Sources */,
 				935622A5280786C700B4B7D2 /* City.swift in Sources */,

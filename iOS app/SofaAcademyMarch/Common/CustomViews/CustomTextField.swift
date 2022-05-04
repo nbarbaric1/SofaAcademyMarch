@@ -25,7 +25,7 @@ extension CustomTextField: BaseView {
     }
     
     func styleSubviews() {
-        backgroundColor = .systemBlue
+        backgroundColor = .lightGray
         layer.cornerRadius = 10
         layer.masksToBounds = true
     }
